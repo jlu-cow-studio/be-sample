@@ -15,7 +15,7 @@ RUN go env -w GO111MODULE=on \
 RUN go build -o app main.go
 
 # 暴露服务端口
-EXPOSE 3000
+EXPOSE 8080
 
 # 执行命令
 CMD ["/app/app"]

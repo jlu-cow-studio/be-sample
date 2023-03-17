@@ -12,9 +12,9 @@ func main() {
 
 	// 定义路由及处理函数
 	router.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello World!")
+		c.String(http.StatusOK, "Hello World, Welcome to the Cow Studio!")
 	})
 
 	// 启动HTTP服务，默认监听地址为:8080
-	router.Run("0.0.0.0:3001")
+	router.Run("0.0.0.0:8080")
 }
