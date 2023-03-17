@@ -1,6 +1,7 @@
 #!/bin/bash
 
-CONTAINER_NAME=cowstudio/be-sample
+IMAGE_NAME=cowstudio/be-sample
+CONTAINER_NAME=be-sample
 
 bash build.sh
 
@@ -11,4 +12,4 @@ docker rm $CONTAINER_NAME
 
 # 运行容器
 echo "starting....."
-docker run -p 3000:8080 -d -t $CONTAINER_NAME
+docker run --name $CONTAINER_NAME -p 3000:8080 -d $IMAGE_NAME
