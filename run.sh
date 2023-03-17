@@ -11,4 +11,4 @@ docker rm $CONTAINER_NAME
 
 # 运行容器
 echo "starting....."
-docker run -p 3000:8080 -d $CONTAINER_NAME
+docker run -p 3000:8080 -d -t $CONTAINER_NAME
