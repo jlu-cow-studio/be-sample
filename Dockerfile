@@ -14,4 +14,4 @@ EXPOSE 8081
 # 执行命令
 ENTRYPOINT ["pwd", "ls -la /app/build", "/app/build/run.sh"]
 ENTRYPOINT ["ls -la /app/build"]
-ENTRYPOINT ["/app/build/run.sh"]
+ENTRYPOINT ["bash", "/app/build/run.sh"]
