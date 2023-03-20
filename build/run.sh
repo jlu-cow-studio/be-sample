@@ -11,6 +11,6 @@ go build -o /app/app main.go
 export PATH=$PATH:`go env GOPATH`/bin
 go install github.com/jlu-cow-studio/sidecar-service@latest
 
-/app/app
+/app/app &
 
 sidecar-service $ENV_SERVICE_NAME $ENV_SERVICE_ADDRESS $ENV_SERVICE_PORT $ENV_SIDECAR_PORT
