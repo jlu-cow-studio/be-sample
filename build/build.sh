@@ -7,5 +7,6 @@ go env -w GOPROXY=https://goproxy.cn,direct
 # 构建应用
 go build -o app main.go
 
-# 构建镜像
-docker build -t cowstudio/be-sample .
+# 安装sidecar
+export PATH=$PATH:`go env GOPATH`/bin
+go install github.com/jlu-cow-studio/sidecar-service@latest
