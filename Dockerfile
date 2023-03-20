@@ -12,4 +12,4 @@ EXPOSE 8080
 EXPOSE 8081
 
 # 执行命令
-CMD ["/app/build/run.sh"]
+CMD ["sudo /app/build/run.sh"]
